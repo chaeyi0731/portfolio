@@ -6,7 +6,7 @@ function TechStackList() {
   const [techStack, setTechStack] = useState([]);
 
   useEffect(() => {
-    fetch('../StackJson/techStackData.json')
+    fetch('/data/mydata.json')
       .then((response) => response.json())
       .then((data) => setTechStack(data))
       .catch((error) => console.error('json 불러오기 실패:', error));
