@@ -1,6 +1,6 @@
 function Introduction() {
   return (
-    <div className="-ml-96">
+    <div className="ml-56">
       <h1 className="text-2xl font-bold mt-7 ">👨‍💻 Full Stack Engineer, Web Developer</h1>
       <ul className="mt-4 font-medium list-disc">
         <li className="mt-4 ml-5">
