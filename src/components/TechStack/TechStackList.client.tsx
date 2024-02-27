@@ -13,7 +13,7 @@ function TechStackList() {
   }, []);
 
   return (
-    <div className="tech-stack-list">
+    <div className="tech-stack-list ml-56 mt-14 flex flex-col ">
       <h1>⚒️ 기술 스택</h1>
       {techStack.map((tech, index) => (
         <TechStackSection key={index} tech={tech} />
