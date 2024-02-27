@@ -1,6 +1,10 @@
-import TechStackList from '../components/TechStack/TechStackList.client';
+import dynamic from 'next/dynamic';
 import ProfileSection from '../components/ProfileSection';
 import Introduction from '../components/myInfo/Introduction';
+
+const TechStackList = dynamic(() => import('../components/TechStack/TechStackList.client'), {
+  ssr: false, // 서버 사이드 렌더링을 비활성화하여 클라이언트 사이드에서만 로드되도록 합니다.
+});
 
 function Main() {
   return (
