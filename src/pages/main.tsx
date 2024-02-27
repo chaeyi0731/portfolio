@@ -1,3 +1,4 @@
+import TechStackList from '@/components/TechStack/TechStackList';
 import ProfileSection from '../components/ProfileSection';
 import Introduction from '../components/myInfo/Introduction';
 
@@ -8,6 +9,7 @@ function Main() {
       <ProfileSection />
       <hr className="border-white w-2/3 mt-10" />
       <Introduction />
+      <TechStackList />
     </div>
   );
 }
