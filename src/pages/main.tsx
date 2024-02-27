@@ -1,4 +1,4 @@
-import TechStackList from '@/components/TechStack/TechStackList';
+import TechStackList from '../components/TechStack/TechStackList.client';
 import ProfileSection from '../components/ProfileSection';
 import Introduction from '../components/myInfo/Introduction';
 
