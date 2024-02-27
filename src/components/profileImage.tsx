@@ -5,8 +5,8 @@ function Profileimage() {
     <Image
       src="https://stellatalk.s3.ap-northeast-2.amazonaws.com/image/KakaoTalk_Photo_2024-02-25-21-38-35.jpeg"
       alt="my profile Image"
-      width={500} // 이미지의 너비
-      height={300} // 이미지의 높이
+      width={300} // 이미지의 너비
+      height={400} // 이미지의 높이
     />
   );
 }
