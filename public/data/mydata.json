@@ -1,12 +1,12 @@
 [
   {
     "title": "Javascript",
-    "imageUrl":"https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1629279836/noticon/qopgwljhqw2ezqxnfjpe.png",
+    "imageUrl": "https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1629279836/noticon/qopgwljhqw2ezqxnfjpe.png",
     "description": ["이전에 다양한 주제들로 작업 하고 싶었던 작업들을 javascript를 통해 작업을 하였습니다.", "함수를 통해 이벤트 핸들러를 동작하여 동작 구현을 사용 할 수 있습니다."]
   },
   {
     "title": "Typescript",
-    "imageUrl":"https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1566913457/noticon/eh4d0dnic4n1neth3fui.png",
+    "imageUrl": "https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1566913457/noticon/eh4d0dnic4n1neth3fui.png",
     "description": [
       "react를 사용할 때 typescript 를 사용하여 오류를 최적화 할 수있게 만들었습니다.",
       "javascript에서 잡지 못했던 오류들을 typescript로 조금 더 강력하게 디버깅 하여 오류를 찾아내며 작업을 할 수 있습니다."
@@ -14,23 +14,23 @@
   },
   {
     "title": "React",
-    "imageUrl":"https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1566557331/noticon/d5hqar2idkoefh6fjtpu.png",
+    "imageUrl": "https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1566557331/noticon/d5hqar2idkoefh6fjtpu.png",
     "description": [
       "react를 사용하여 기존 javascript로 작업한 작업물을 react로 변환하고 또는 react로만으로도 작업물을 작업하였습니다.",
       "모듈화 된 컴포넌트로 코드를 간결화 하여 작업 하였으며 재사용 할 수 있는 컴포넌트나 인터페이스들은 모아 따로 보관하는 작업이 가능합니다."
     ]
   },
   {
-    "title": "Node.js / Express",
-    "imageUrl":"https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1634264836/noticon/uxvdxcyvs5ocrxhacfj6.png",
+    "title": "MariaDB",
+    "imageUrl": "https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1579928281/noticon/wfykhuhsg5hfddh6ok0o.png",
     "description": [
-      "다양한 작업에서 node를 사용하여 로컬로 서버 개발을 해보았습니다.",
-      "Http 메서드인 GET, POST, PUT , DELETE 등을 사용하여 서버와 클라이언트 사이의 요청과 응답을 해보았으며 데이터베이스의 데이터 삽입 및 추출을 경험함으로서 서버에서의 요청과 응답을 사용 할 수 있습니다."
+      "팀 프로젝트 또는 개인 프로젝트를 통해 해당 데이터베이스를 사용하고 쿼리를 이해하며 사용할 수 있습니다.",
+      "관계형 데이터베이스를 사용하여 데이터베이스 테이블간에 서로 참조를 하며 데이터베이스의 쿼리를 이해 하고 사용이 가능합니다."
     ]
   },
   {
-    "title": "MYSQL / MariaDB / AWS RDS",
-    "imageUrl":"https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1708501796/noticon/nbtnirytd6whhfphks4m.png",
+    "title": "MYSQL",
+    "imageUrl": "https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1603423163/noticon/az0cvs28lm7gxoowlsva.png",
     "description": [
       "팀 프로젝트 또는 개인 프로젝트를 통해 해당 데이터베이스를 사용하고 쿼리를 이해하며 사용할 수 있습니다.",
       "관계형 데이터베이스를 사용하여 데이터베이스 테이블간에 서로 참조를 하며 데이터베이스의 쿼리를 이해 하고 사용이 가능합니다."
@@ -38,24 +38,37 @@
   },
   {
     "title": "AWS S3",
-    "imageUrl":"https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1567064876/noticon/sb5llmvfubuceldbkmx8.png",
-    "description": [
-      "개인 프로젝트에서 s3를 통해 로컬 파일인 이미지를 버킷에 담고 객체를 반환하여 데이터베이스에 삽입하는 방식을 사용하였습니다."
-    ]
+    "imageUrl": "https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1567064876/noticon/sb5llmvfubuceldbkmx8.png",
+    "description": ["개인 프로젝트에서 s3를 통해 로컬 파일인 이미지를 버킷에 담고 객체를 반환하여 데이터베이스에 삽입하는 방식을 사용하였습니다."]
   },
   {
     "title": "AWS EC2",
-    "imageUrl":"https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1629987467/noticon/o0ua9qgyuuoazjqwwvas.png",
-    "description": [
-      "개인프로젝트에서 EC2와 LightSail 인스턴스를 생성 하여 서버 배포를 할 수 있으며 해당 ec2 작업으로 인해 리눅스와 우분투 또한 학습 하였으며 사용이 가능합니다."
-    ]
+    "imageUrl": "https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1629987467/noticon/o0ua9qgyuuoazjqwwvas.png",
+    "description": ["개인프로젝트에서 EC2와 LightSail 인스턴스를 생성 하여 서버 배포를 할 수 있으며 해당 ec2 작업으로 인해 리눅스와 우분투 또한 학습 하였으며 사용이 가능합니다."]
   },
+
   {
     "title": "Git",
-    "imageUrl":"https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1566913419/noticon/xf9bevlrgugi7xj6xkhp.png",
+    "imageUrl": "https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1566913419/noticon/xf9bevlrgugi7xj6xkhp.png",
     "description": [
       "모든 프로젝트를 git을 통해 진행 하여 컨벤션을 맞춰 찾기 편하고 작업 현황을 볼 수 있도록 작업을 진행했습니다..",
       "git을 통해 브랜치 생성으로 main 데이터 손실을 줄이며 merge를 통해  충돌이 일어났을 때 변경 사항을 체크하며 해결을 할 수 있습니다."
+    ]
+  },
+  {
+    "title": "RDS",
+    "imageUrl": "https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1683592944/noticon/plcvyiwmdh4adlt8dxgo.png",
+    "description": [
+      "팀 프로젝트 또는 개인 프로젝트를 통해 해당 데이터베이스를 사용하고 쿼리를 이해하며 사용할 수 있습니다.",
+      "관계형 데이터베이스를 사용하여 데이터베이스 테이블간에 서로 참조를 하며 데이터베이스의 쿼리를 이해 하고 사용이 가능합니다."
+    ]
+  },
+  {
+    "title": "Node.js / Express",
+    "imageUrl": "https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1634264836/noticon/uxvdxcyvs5ocrxhacfj6.png",
+    "description": [
+      "다양한 작업에서 node를 사용하여 로컬로 서버 개발을 해보았습니다.",
+      "Http 메서드인 GET, POST, PUT , DELETE 등을 사용하여 서버와 클라이언트 사이의 요청과 응답을 해보았으며 데이터베이스의 데이터 삽입 및 추출을 경험함으로서 서버에서의 요청과 응답을 사용 할 수 있습니다."
     ]
   }
 ]
