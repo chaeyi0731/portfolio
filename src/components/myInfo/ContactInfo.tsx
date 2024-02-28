@@ -11,6 +11,10 @@ function ContactInfo() {
       <a className="mt-2.5 underline" href="https://www.instagram.com/chae._.y99/" target="_blank" rel="noopener noreferrer">
         https://www.instagram.com/chae._.y99/
       </a>
+      <p className="font-bold mt-12">🧡 Tistory Blog</p>
+      <a className="mt-2.5 underline" href="https://leecherry.tistory.com/" target="_blank" rel="noopener noreferrer">
+        https://leecherry.tistory.com/
+      </a>
     </div>
   );
 }
