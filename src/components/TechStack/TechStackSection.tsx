@@ -19,13 +19,21 @@ const TechStackSection: React.FC<TechStackSectionProps> = ({ tech }) => {
   };
 
   return (
-    <div className="flex justify-center items-center">
-      <div>
+    <div className="tech-stack-section">
+      <div className="image-container">
         <h2 className="text-2xl font-bold mt-9">{tech.title}</h2>
-        <img src={tech.imageUrl} alt={tech.title} className="mt-4 cursor-pointer" onClick={toggleDescription} />
+        <div className="flex flex-wrap justify-center">
+          <div className="m-2">
+            <img src={tech.imageUrl} alt={tech.title} className="cursor-pointer w-24" onClick={toggleDescription} />
+          </div>
+
+          <div className="m-2">
+            <img src={tech.imageUrl} alt={tech.title} className="cursor-pointer w-24" onClick={toggleDescription} />
+          </div>
+        </div>
       </div>
       {showDescription && (
-        <div className="text-gray-400 mt-4 ">
+        <div className="text-gray-400 mt-4">
           {tech.description.map((paragraph, index) => (
             <p key={index}>{paragraph}</p>
           ))}
