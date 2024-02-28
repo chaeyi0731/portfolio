@@ -1,7 +1,7 @@
 function Introduction() {
   return (
     <div className="ml-56">
-      <h1 className="text-2xl font-bold mt-7 ">👨‍💻 Full Stack Engineer, Web Developer</h1>
+      <h1 className="text-2xl font-bold mt-7 ">👨‍💻 Web Developer</h1>
       <ul className="mt-4 font-medium list-disc">
         <li className="mt-4 ml-5">
           안녕하세요! <span className="font-bold text-blue-400">꾸준히 성장하는 개발자 이채이</span> 입니다.
