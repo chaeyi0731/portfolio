@@ -2,14 +2,20 @@
   {
     "title": "Javascript",
     "imageUrl": "https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1629279836/noticon/qopgwljhqw2ezqxnfjpe.png",
-    "description": ["이전에 다양한 주제들로 작업 하고 싶었던 작업들을 javascript를 통해 작업을 하였습니다.", "함수를 통해 이벤트 핸들러를 동작하여 동작 구현을 사용 할 수 있습니다."]
+    "description": [
+      "이전에 다양한 주제들로 작업 하고 싶었던 작업들을 javascript를 통해 작업을 하였습니다.",
+      " 함수를 통해 이벤트 핸들러의 동작을 구현을 사용 할 수 있습니다.",
+      " setTimeout()를 사용하여 타이머를 구현하여 간단하게 클릭게임을 구현 한 경험이 있습니다.",
+      "또한, 조건문과 반복문을 통해 간단한 자판기 기능을 구현해 보았습니다."
+    ]
   },
   {
     "title": "Typescript",
     "imageUrl": "https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1566913457/noticon/eh4d0dnic4n1neth3fui.png",
     "description": [
       "react를 사용할 때 typescript 를 사용하여 오류를 최적화 할 수있게 만들었습니다.",
-      "javascript에서 잡지 못했던 오류들을 typescript로 조금 더 강력하게 디버깅 하여 오류를 찾아내며 작업을 할 수 있습니다."
+      "javascript에서 잡지 못했던 오류들을 typescript로 조금 더 강력하게 디버깅 하여 오류를 찾아내며 작업을 할 수 있습니다.",
+      "type 규정으로 인해 null 이나 undefined의 에러를 줄여 프로젝트의 작업 시간을 줄여 나갔습니다."
     ]
   },
   {
@@ -17,14 +23,16 @@
     "imageUrl": "https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1566557331/noticon/d5hqar2idkoefh6fjtpu.png",
     "description": [
       "react를 사용하여 기존 javascript로 작업한 작업물을 react로 변환하고 또는 react로만으로도 작업물을 작업하였습니다.",
-      "모듈화 된 컴포넌트로 코드를 간결화 하여 작업 하였으며 재사용 할 수 있는 컴포넌트나 인터페이스들은 모아 따로 보관하는 작업이 가능합니다."
+      "모듈화 된 컴포넌트로 코드를 간결화 하여 작업 하였으며 재사용 할 수 있는 컴포넌트나 인터페이스들은 모아 따로 보관하는 작업이 가능합니다.",
+      "useState라는 상태 관리 훅을 사용하여 로그인 상태를 확인 하는 방법으로 사용하였습니다.",
+      "또한 useEffect 훅을 사용하여 서버와 클라이언트 간에 데이터베이스의 데이터 값들을 랜더링 하거나 데이터를 삽입하는 부분에서 사용했습니다. "
     ]
   },
   {
     "title": "MariaDB",
     "imageUrl": "https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1579928281/noticon/wfykhuhsg5hfddh6ok0o.png",
     "description": [
-      "팀 프로젝트 또는 개인 프로젝트를 통해 해당 데이터베이스를 사용하고 쿼리를 이해하며 사용할 수 있습니다.",
+      "MariaDB는 팀프로젝트 ERP 진행 시 데이터들을 정리 하는 것으로 사용해보았습니다. 제가 맡은 부분은 장바구니와 결제, 바로구매 부분을 담당 하였습니다. 해당 부분을 진행하며 각자의 테이블에서 서로 참조하여 가격을 계산하고 결제 시 상품의 갯수 데이터가 줄어드는 부분에서 많은 공부와 많은 시행 착오를 겪었습니다. 장바구니 테이블과 상품 테이블이 서로 컬럼의 이름이 같지 않을 시에 결제페이지에서 상품 관련한 데이터를 가져 오지 못하는 경험을 해보았습니다.",
       "관계형 데이터베이스를 사용하여 데이터베이스 테이블간에 서로 참조를 하며 데이터베이스의 쿼리를 이해 하고 사용이 가능합니다."
     ]
   },
@@ -32,26 +40,31 @@
     "title": "MYSQL",
     "imageUrl": "https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1603423163/noticon/az0cvs28lm7gxoowlsva.png",
     "description": [
-      "팀 프로젝트 또는 개인 프로젝트를 통해 해당 데이터베이스를 사용하고 쿼리를 이해하며 사용할 수 있습니다.",
+      "개인 프로젝트를 진행하며 로그인과회원가입의 유저의 데이터와 게시판의 게시글과 댓글 채팅의 내용을 데이터에 저장하는 방식을 사용 할 때 해당 Mysql을 사용해보았습니다.",
       "관계형 데이터베이스를 사용하여 데이터베이스 테이블간에 서로 참조를 하며 데이터베이스의 쿼리를 이해 하고 사용이 가능합니다."
     ]
   },
   {
     "title": "AWS S3",
     "imageUrl": "https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1567064876/noticon/sb5llmvfubuceldbkmx8.png",
-    "description": ["개인 프로젝트에서 s3를 통해 로컬 파일인 이미지를 버킷에 담고 객체를 반환하여 데이터베이스에 삽입하는 방식을 사용하였습니다."]
+    "description": [
+      "개인 프로젝트에서 s3를 통해 로컬 파일인 이미지를 버킷에 담고 객체를 반환하여 데이터베이스에 삽입하는 방식을 사용하였습니다.",
+      "개인프로젝트에서 s3의 버킷 퍼블릭엑세스 허용으로 게시판에서의 로컬에 파일을 삽입하면 해당 파일을 객체 반환한 후 데이터베이스에 삽입하여 랜더링을 하였습니다. 로컬에 저장된 파일을 모든 사용자들이 볼 수 있도록 S3를 사용하였습니다."
+    ]
   },
   {
     "title": "AWS EC2",
     "imageUrl": "https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1629987467/noticon/o0ua9qgyuuoazjqwwvas.png",
-    "description": ["개인프로젝트에서 EC2와 LightSail 인스턴스를 생성 하여 서버 배포를 할 수 있으며 해당 ec2 작업으로 인해 리눅스와 우분투 또한 학습 하였으며 사용이 가능합니다."]
+    "description": [
+      "개인프로젝트에서 EC2와 LightSail로 인스턴스를 생성 하여 서버 배포를 하였습니다. 배포시 문제가 생겼던 vpc의 보안 연결 RDS와의 데이터베이스 연결 인스턴스를 생성하고 관리 하며 리눅스와 우분투 또한 학습을 진행하기 좋은 사례였다고 생각합니다. 여러건의 인스턴스를 제작하여 EC2의 원활한 연결과 사용이 가능합니다."
+    ]
   },
 
   {
     "title": "Git",
     "imageUrl": "https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1566913419/noticon/xf9bevlrgugi7xj6xkhp.png",
     "description": [
-      "모든 프로젝트를 git을 통해 진행 하여 컨벤션을 맞춰 찾기 편하고 작업 현황을 볼 수 있도록 작업을 진행했습니다..",
+      "모든 프로젝트를 git을 통해 진행 하여 작업을 진행 하였고 또한 github를 사용하여 GUI적으로 issue를 통해 해야할 일과 마일스톤을 활용하여 버전 관리를 진행 하였으며 또한 커밋 컨벤션을 맞춰 수정한 부분이나 수정할 부분을 찾기에 편리하고 작업 현황을 볼 수 있도록 작업을 진행했습니다.",
       "git을 통해 브랜치 생성으로 main 데이터 손실을 줄이며 merge를 통해  충돌이 일어났을 때 변경 사항을 체크하며 해결을 할 수 있습니다."
     ]
   },
@@ -59,7 +72,7 @@
     "title": "RDS",
     "imageUrl": "https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1683592944/noticon/plcvyiwmdh4adlt8dxgo.png",
     "description": [
-      "팀 프로젝트 또는 개인 프로젝트를 통해 해당 데이터베이스를 사용하고 쿼리를 이해하며 사용할 수 있습니다.",
+      "팀 프로젝트 또는 개인 프로젝트에서 사용하였으며 팀 프로젝트 진행시 매번 각자 데이터베이스를 관리 하는 와중에 쿼리문이 변경 되거나 새로운 데이터베이스 테이블이 생성 될 경우 데이터베이스 혼동 및 심지어 삭제까지 하는 일이 발생하자 aws의 RDS를 도입 하였고 더이상 데이터베이스의 컬럼이나 테이블이 변경 되어도 문제가 생기는 일이 없었습니다.",
       "관계형 데이터베이스를 사용하여 데이터베이스 테이블간에 서로 참조를 하며 데이터베이스의 쿼리를 이해 하고 사용이 가능합니다."
     ]
   },
@@ -67,8 +80,8 @@
     "title": "Node.js / Express",
     "imageUrl": "https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1634264836/noticon/uxvdxcyvs5ocrxhacfj6.png",
     "description": [
-      "다양한 작업에서 node를 사용하여 로컬로 서버 개발을 해보았습니다.",
-      "Http 메서드인 GET, POST, PUT , DELETE 등을 사용하여 서버와 클라이언트 사이의 요청과 응답을 해보았으며 데이터베이스의 데이터 삽입 및 추출을 경험함으로서 서버에서의 요청과 응답을 사용 할 수 있습니다."
+      "거의 모든 작업에서 node를 사용하여 로컬로 서버 개발을 해보았습니다. 서버의 요청인 request 와 응답인 response를 사용하여 서버의 요청이 무엇이고 그에 걸맞는 응답은 어떤것이 있는것인지 확인을 하여 작업을 진행 하였고 바닐라로 해당 서버의 요청응답 해결 후 프레임워크인 express를 사용하였습니다.",
+      "Http 메서드인 GET, POST, PUT , DELETE 등을 사용하여 서버와 클라이언트 사이의 요청과 응답을 해결 해보았으며 데이터베이스의 데이터 삽입 및 추출 하여 랜더링 하는 것을 경험함으로서 데이터베이스와 서버간의 유연한 통신이 가능합니다."
     ]
   }
 ]
