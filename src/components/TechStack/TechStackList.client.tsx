@@ -1,3 +1,4 @@
+// TechStackList.client.tsx
 'use client';
 import React, { useState, useEffect } from 'react';
 import TechStackSection from './TechStackSection';
@@ -18,17 +19,21 @@ function TechStackList() {
   };
 
   return (
-    <div className="flex ml-56 mt-14 flex-col">
+    <div className="ml-56 mt-14 flex flex-col">
       <h1 className="text-2xl font-bold mt-7">⚒️ 기술 스택</h1>
-      <div className="flex flex-row justify-between ">
-        <div className="tech-stack-list mt-14 w-72 flex flex-row flex-wrap justify-between">
+      <div className="flex">
+        <div className="flex flex-wrap justify-between w-96 mr-10">
+          {' '}
           {techStack.map((tech, index) => (
             <TechStackSection key={index} tech={tech} onTechClick={() => handleTechClick(tech.description.join(' '))} />
           ))}
         </div>
         {selectedTechDescription && (
-          <div className="description text-gray-400 mt-4 ">
-            <p>{selectedTechDescription}</p>
+          <div className="flex-1">
+            {' '}
+            <div className="text-gray-400 flex justify-center text-2xl">
+              <p>{selectedTechDescription}</p>
+            </div>
           </div>
         )}
       </div>
