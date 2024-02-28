@@ -11,7 +11,7 @@ function TechStackList() {
   useEffect(() => {
     fetch('/data/mydata.json')
       .then((response) => response.json())
-      .then((data: Tech[]) => setTechStack(data)) // Tech[] 타입으로 데이터를 처리
+      .then((data: Tech[]) => setTechStack(data)) 
       .catch((error) => console.error('json 불러오기 실패:', error));
   }, []);
 
@@ -31,10 +31,10 @@ function TechStackList() {
           ))}
         </div>
         {selectedTechDescription && (
-          <div className="flex-1">
+          <div className="flex-1 flex justify-center">
             {' '}
-            <div className="text-gray-400 flex justify-center text-2xl">
-              <p>{selectedTechDescription}</p>
+            <div className="text-gray-400  text-xl text-justify">
+              <p className="whitespace-pre-wrap ">{selectedTechDescription}</p>
             </div>
           </div>
         )}
