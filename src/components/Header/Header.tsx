@@ -1,6 +1,11 @@
+'use client';
+
 import React, { useRef } from 'react';
+import ProfileSection from '../ProfileSection';
 
 function Header() {
+  const profileSectionRef = useRef(null);
+
   const infoRef = useRef<HTMLDivElement>(null);
   const skillRef = useRef<HTMLDivElement>(null);
   const projectRef = useRef<HTMLDivElement>(null);
@@ -22,7 +27,7 @@ function Header() {
 
       {/* 페이지 컨텐츠 */}
       <div className="container mx-auto overflow-y-hidden">
-        <section ref={infoRef} className="section">
+        <section ref={profileSectionRef} className="section">
           Info Section
         </section>
         <section ref={skillRef} className="section">
