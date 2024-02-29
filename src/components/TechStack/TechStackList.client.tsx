@@ -24,7 +24,7 @@ function TechStackList() {
   return (
     <div className="ml-56 mt-32 flex flex-col">
       <h1 className="text-2xl font-bold mt-7">⚒️ 기술 스택</h1>
-      <div className="flex mt-32">
+      <div className="flex mt-10">
         <div className="flex flex-wrap justify-between w-96 mr-10 mt-9">
           {' '}
           {techStack.map((tech, index) => (
