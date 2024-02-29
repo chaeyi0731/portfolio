@@ -1,21 +1,35 @@
 'use client';
 
-import React, { useRef } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import Header from '@/components/Header/Header';
 import dynamic from 'next/dynamic';
 import ProfileSection from '../components/ProfileSection';
 import Introduction from '../components/myInfo/Introduction';
+import ProjectsPage from './project';
 
 const TechStackList = dynamic(() => import('../components/TechStack/TechStackList.client'), {
-  ssr: false, // 서버 사이드 렌더링을 비활성화하여 클라이언트 사이드에서만 로드되도록 합니다.
+  ssr: false, // 서버 사이드 렌더링을 비활성화하여 
 });
 
+
+
+
 function Main() {
+  const [projects, setProjects] = useState([]);
+
   const profileRef = useRef(null);
   const techStackRef = useRef(null);
   const introRef = useRef(null);
   const titleRef = useRef(null);
 
+  useEffect(() => {
+    import('../../public/data/project.json')
+      .then((data) => {
+        setProjects(data.default.projects); // 데이터 구조에 따라 접근 경로 조정 필요
+      })
+      .catch((error) => console.error("Failed to load projects data", error));
+  }, []);
+  
   return (
     <>
       <Header profileRef={profileRef} techStackRef={techStackRef} introRef={introRef} titleRef={titleRef} />
@@ -34,6 +48,7 @@ function Main() {
           <div ref={techStackRef}>
             <TechStackList />
           </div>
+          <ProjectsPage projects={projects} />
         </div>
       </div>
     </>
