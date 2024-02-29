@@ -1,11 +1,6 @@
 // TechStackSection.client.tsx
 import React from 'react';
-
-interface Tech {
-  title: string;
-  imageUrl: string;
-  description: string[];
-}
+import { Tech } from '../interface/tech';
 
 interface TechStackSectionProps {
   tech: Tech;
