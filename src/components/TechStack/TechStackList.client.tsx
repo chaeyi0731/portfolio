@@ -2,6 +2,7 @@
 'use client';
 import React, { useState, useEffect } from 'react';
 import TechStackSection from './TechStackSection';
+import { Tech } from '../interface/Tech';
 
 function TechStackList() {
   const [techStack, setTechStack] = useState<Tech[]>([]);
@@ -21,9 +22,9 @@ function TechStackList() {
   };
 
   return (
-    <div className="ml-56 mt-14 flex flex-col">
+    <div className="ml-56 mt-32 flex flex-col">
       <h1 className="text-2xl font-bold mt-7">⚒️ 기술 스택</h1>
-      <div className="flex mt-9">
+      <div className="flex mt-32">
         <div className="flex flex-wrap justify-between w-96 mr-10 mt-9">
           {' '}
           {techStack.map((tech, index) => (
@@ -33,8 +34,8 @@ function TechStackList() {
         {selectedTechDescription && (
           <div className="flex-1 flex justify-center">
             {' '}
-            <div className="text-gray-400  text-xl text-justify">
-              <p className="whitespace-pre-wrap ">{selectedTechDescription}</p>
+            <div className="text-gray-400  text-xl text-justify flex justify-center">
+              <p className="whitespace-pre-wrap  ">{selectedTechDescription}</p>
             </div>
           </div>
         )}
