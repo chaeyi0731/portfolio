@@ -2,6 +2,7 @@
 'use client';
 import React, { useState, useEffect } from 'react';
 import TechStackSection from './TechStackSection';
+import { Tech } from '../interface/tech';
 
 function TechStackList() {
   const [techStack, setTechStack] = useState<Tech[]>([]);
