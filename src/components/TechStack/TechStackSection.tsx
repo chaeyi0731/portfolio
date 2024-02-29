@@ -1,6 +1,6 @@
 // TechStackSection.client.tsx
 import React from 'react';
-import { Tech } from '../interface/tech';
+import { Tech } from '../interface/Tech'
 
 interface TechStackSectionProps {
   tech: Tech;
