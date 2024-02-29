@@ -1,14 +1,9 @@
-// import Image from 'next/image';
-import Header from '@/components/Header/Header';
 import Main from '../pages/main';
 
 export default function Home() {
   return (
-    <>
-      <Header />
-      <main className="flex min-h-screen flex-col items-center justify-between p-24">
-        <Main />
-      </main>
-    </>
+    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+      <Main />
+    </main>
   );
 }
