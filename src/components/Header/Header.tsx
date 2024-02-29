@@ -27,15 +27,9 @@ function Header() {
 
       {/* 페이지 컨텐츠 */}
       <div className="container mx-auto overflow-y-hidden">
-        <section ref={profileSectionRef} className="section">
-          Info Section
-        </section>
-        <section ref={skillRef} className="section">
-          Skill Section
-        </section>
-        <section ref={projectRef} className="section">
-          Project Section
-        </section>
+        <section ref={profileSectionRef} className="section"></section>
+        <section ref={skillRef} className="section"></section>
+        <section ref={projectRef} className="section"></section>
       </div>
     </div>
   );
