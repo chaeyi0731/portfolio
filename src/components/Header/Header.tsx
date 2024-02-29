@@ -11,7 +11,7 @@ function Header({ profileRef, techStackRef }: HeaderProps) {
   };
 
   return (
-    <header className="fixed top-0 w-full">
+    <header className="fixed top-0 w-full h-1/6 flex justify-around text-xl">
       <button onClick={() => scrollToSection(profileRef)}>Profile</button>
       <button onClick={() => scrollToSection(techStackRef)}>Skill</button>
     </header>
