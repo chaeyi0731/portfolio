@@ -1,37 +1,20 @@
-'use client';
+import React, { RefObject } from 'react';
 
-import React, { useRef } from 'react';
-import ProfileSection from '../ProfileSection';
+interface HeaderProps {
+  profileRef: RefObject<HTMLDivElement>;
+  techStackRef: RefObject<HTMLDivElement>;
+}
 
-function Header() {
-  const profileSectionRef = useRef(null);
-
-  const infoRef = useRef<HTMLDivElement>(null);
-  const skillRef = useRef<HTMLDivElement>(null);
-  const projectRef = useRef<HTMLDivElement>(null);
-
-  const scrollToSection = (ref: React.RefObject<HTMLDivElement>) => {
-    if (ref && ref.current) {
-      ref.current.scrollIntoView({ behavior: 'smooth' });
-    }
+function Header({ profileRef, techStackRef }: HeaderProps) {
+  const scrollToSection = (ref: RefObject<HTMLDivElement>) => {
+    ref.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
-    <div>
-      <header className="flex justify-between p-4 bg-gray-200">
-        {/* 헤더 링크 */}
-        <button onClick={() => scrollToSection(infoRef)}>Info</button>
-        <button onClick={() => scrollToSection(skillRef)}>Skill</button>
-        <button onClick={() => scrollToSection(projectRef)}>Project</button>
-      </header>
-
-      {/* 페이지 컨텐츠 */}
-      <div className="container mx-auto overflow-y-hidden">
-        <section ref={profileSectionRef} className="section"></section>
-        <section ref={skillRef} className="section"></section>
-        <section ref={projectRef} className="section"></section>
-      </div>
-    </div>
+    <header className="fixed top-0 w-full">
+      <button onClick={() => scrollToSection(profileRef)}>Profile</button>
+      <button onClick={() => scrollToSection(techStackRef)}>Skill</button>
+    </header>
   );
 }
 
