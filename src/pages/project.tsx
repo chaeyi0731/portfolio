@@ -48,19 +48,31 @@ function ProjectsPage({ projects }) {
         {projects &&
           projects.map((project) => (
             <div key={project.id} className="p-6 bg-white rounded-lg shadow-lg">
-              {project.image && <img src={project.image} alt={project.name} className="rounded-md mb-4" />}
-              <h3 className="text-xl font-semibold mb-2">{project.name}</h3>
-              <p className="text-gray-700 mb-4">{project.description}</p>
-              {project.githubURL && (
-                <a
-                  href={project.githubURL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block bg-gray-500 text-white py-2 px-4 rounded hover:bg-gray-700 transition-colors duration-200"
-                >
-                  GitHub
-                </a>
-              )}
+              <div className="flex flex-row items-center">
+                {project.image && <img src={project.image} alt={project.name} className="rounded-md mb-4 w-1/2 mr-4" />}
+                <div className="w-1/2">
+                  <h3 className="text-xl font-semibold mb-2">{project.name}</h3>
+                  <p className="text-gray-700 mb-4">{project.description}</p>
+                  <a
+                    href={project.blogURL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700 transition-colors duration-200"
+                  >
+                    Read More
+                  </a>
+                  {project.githubURL && (
+                    <a
+                      href={project.githubURL}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="ml-4 inline-block bg-gray-500 text-white py-2 px-4 rounded hover:bg-gray-700 transition-colors duration-200"
+                    >
+                      GitHub
+                    </a>
+                  )}
+                </div>
+              </div>
               <ul className="mt-4">
                 {project.frontend.technologies.concat(project.backend.technologies, project.database.technologies).map((tech, index) => (
                   <li key={index} className="text-gray-600">
