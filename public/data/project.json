@@ -35,7 +35,7 @@
         "technologies": ["Node.js", "Express", "Node.js", "AWS S3"]
       },
       "database": {
-        "technologies": ["MongoDB", "AWS RDS", "Mysql"]
+        "technologies": ["AWS RDS", "Mysql"]
       },
       "deployment": {
         "technologies": ["AWS Lightsail"]
