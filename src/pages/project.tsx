@@ -4,6 +4,8 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import NextArrow from '@/components/Arrow/nextArrow';
+import PrevArrow from '@/components/Arrow/PrevArrow';
 
 interface Project {
   id: number;
@@ -43,6 +45,8 @@ function ProjectsPage({ projects }: ProjectsPageProps) {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
   };
 
   return (
