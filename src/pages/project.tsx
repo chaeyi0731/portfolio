@@ -1,4 +1,5 @@
-// pages/projects.js
+// pages/projects.tsx
+
 import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
@@ -7,14 +8,14 @@ import 'slick-carousel/slick/slick-theme.css';
 interface Project {
   id: number;
   name: string;
-  githubURL?: string; // GitHub URL은 선택적
-  projectURL?: string; // 프로젝트 URL도 선택적
-  blogURL?: string; // 블로그 URL도 선택적
-  image?: string; // 프로젝트 이미지 URL 추가, 선택적
+  githubURL?: string;
+  projectURL?: string;
+  blogURL?: string;
+  image?: string;
   frontend: { technologies: string[] };
-  backend?: { technologies: string[] }; // 백엔드 기술 목록 선택적
-  database?: { technologies: string[] }; // 데이터베이스 기술 목록 선택적
-  deployment?: { technologies: string[] }; // 배포 기술 목록 선택적
+  backend?: { technologies: string[] };
+  database?: { technologies: string[] };
+  deployment?: { technologies: string[] };
   description: string;
 }
 
@@ -23,17 +24,18 @@ interface ProjectsPageProps {
 }
 
 export async function getStaticProps() {
+  // JSON 파일 불러오기 및 타입 단언
   const projectsData = await import('../../public/data/project.json');
-  console.log(projectsData); // 이렇게 데이터 구조 확인
+  const projects: Project[] = projectsData.default.projects;
+
   return {
     props: {
-      projects: projectsData.projects || [],
+      projects,
     },
   };
 }
 
-function ProjectsPage({ projects }) {
-  // react-slick 설정
+function ProjectsPage({ projects }: ProjectsPageProps) {
   const settings = {
     dots: true,
     infinite: true,
