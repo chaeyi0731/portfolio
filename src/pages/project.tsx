@@ -36,6 +36,7 @@ export async function getStaticProps() {
 }
 
 function ProjectsPage({ projects }: ProjectsPageProps) {
+  // react-slick 슬라이더 설정
   const settings = {
     dots: true,
     infinite: true,
@@ -47,49 +48,65 @@ function ProjectsPage({ projects }: ProjectsPageProps) {
   return (
     <div>
       <Slider {...settings}>
-        {projects &&
-          projects.map((project) => (
-            <div key={project.id} className="p-6 rounded-lg shadow-lg mt-80">
-              <div className="flex flex-row items-center">
-                {project.image && <img src={project.image} alt={project.name} className="rounded-md mb-4 w-1/2 mr-4" />}
-                <div className="ml-10">
-                  <div className="w-1/2">
-                    <h3 className="text-xl font-semibold mb-2">{project.name}</h3>
-                    <p className="text-gray-700 mb-4">{project.description}</p>
-                    <a
-                      href={project.blogURL}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700 transition-colors duration-200"
-                    >
-                      Read More
-                    </a>
-                    {project.githubURL && (
-                      <a
-                        href={project.githubURL}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="ml-4 inline-block bg-gray-500 text-white py-2 px-4 rounded hover:bg-gray-700 transition-colors duration-200"
-                      >
-                        GitHub
-                      </a>
-                    )}
-                  </div>
-                  <div>
-                    <ul className="mt-4">
-                      {project.frontend.technologies.concat(project.backend.technologies, project.database.technologies).map((tech, index) => (
-                        <li key={index} className="text-gray-600">
-                          {tech}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
+        {projects.map((project) => (
+          <div key={project.id} className="p-6 rounded-lg shadow-lg mt-80">
+            <div className="flex flex-row items-center space-x-4">
+              {project.image && <img src={project.image} alt={project.name} className="rounded-md mb-4 w-1/2" />}
+              <div className="w-1/2">
+                <h3 className="text-xl font-semibold mb-2">{project.name}</h3>
+                <p className="text-gray-700 mb-4">{project.description}</p>
+                {project.githubURL && (
+                  <a
+                    href={project.githubURL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700 transition-colors duration-200"
+                  >
+                    GitHub
+                  </a>
+                )}
+                {project.blogURL && (
+                  <a
+                    href={project.blogURL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block bg-green-500 text-white py-2 px-4 rounded hover:bg-green-700 transition-colors duration-200 mt-4"
+                  >
+                    Read More
+                  </a>
+                )}
+                {renderTechnologySections(project)}
               </div>
             </div>
-          ))}
+          </div>
+        ))}
       </Slider>
     </div>
+  );
+}
+
+function renderTechnologySections(project: Project) {
+  const sections = [
+    { title: 'Frontend', technologies: project.frontend.technologies },
+    { title: 'Backend', technologies: project.backend?.technologies || [] },
+    { title: 'Database', technologies: project.database?.technologies || [] },
+    { title: 'Deployment', technologies: project.deployment?.technologies || [] },
+  ];
+
+  return sections.map(
+    (section, index) =>
+      section.technologies.length > 0 && (
+        <div key={index} className="mt-4">
+          <h4 className="font-bold">{section.title}:</h4>
+          <ul>
+            {section.technologies.map((tech, techIndex) => (
+              <li key={techIndex} className="text-gray-600">
+                {tech}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )
   );
 }
 
