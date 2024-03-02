@@ -47,7 +47,7 @@ function ProjectsPage({ projects }) {
       <Slider {...settings}>
         {projects &&
           projects.map((project) => (
-            <div key={project.id} className="p-6 bg-white rounded-lg shadow-lg">
+            <div key={project.id} className="p-6 rounded-lg shadow-lg mt-80">
               <div className="flex flex-row items-center">
                 {project.image && <img src={project.image} alt={project.name} className="rounded-md mb-4 w-1/2 mr-4" />}
                 <div className="w-1/2">
