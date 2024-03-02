@@ -5,9 +5,10 @@ interface HeaderProps {
   techStackRef: RefObject<HTMLDivElement>;
   introRef: RefObject<HTMLDivElement>;
   titleRef: RefObject<HTMLDivElement>;
+  projectRef: RefObject<HTMLDivElement>;
 }
 
-function Header({ profileRef, techStackRef, introRef, titleRef }: HeaderProps) {
+function Header({ profileRef, techStackRef, introRef, titleRef, projectRef }: HeaderProps) {
   const scrollToSection = (ref: RefObject<HTMLDivElement>) => {
     ref.current?.scrollIntoView({ behavior: 'smooth' });
   };
@@ -21,7 +22,7 @@ function Header({ profileRef, techStackRef, introRef, titleRef }: HeaderProps) {
         <button onClick={() => scrollToSection(profileRef)}>Profile</button>
         <button onClick={() => scrollToSection(introRef)}>intro</button>
         <button onClick={() => scrollToSection(techStackRef)}>Skill</button>
-        <button onClick={() => scrollToSection(techStackRef)}>Project</button>
+        <button onClick={() => scrollToSection(projectRef)}>Project</button>
       </div>
     </header>
   );

@@ -1,0 +1,67 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "name": "gabojago",
+      "image": "https://stellatalk.s3.ap-northeast-2.amazonaws.com/image/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA+2024-02-29+%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE+7.55.53.png",
+      "githubURL": "https://github.com/chaeyi0731/gabojago",
+      "projectURL": "",
+      "blogURL": "https://leecherry.tistory.com/3",
+      "frontend": {
+        "technologies": ["HTML", "CSS", "javascript"]
+      },
+      "backend": {
+        "technologies": ["Node.js", "Express"]
+      },
+      "database": {
+        "technologies": ["Json"]
+      },
+      "deployment": {
+        "technologies": [""]
+      },
+      "description": "gabojago는 개인적으로 가보고 싶은 곳 또는 또 가면 좋을 곳이라고 생각하는 장소들을 기록하는 용도로 작업을 시작하게 되었습니다. 그 이후 학원 훈련생들의 도움을 받아 가보고 싶은 곳으로 지정하여 작업을 하였습니다. json으로 데이터를 정리하고 fetch를 사용하여 json 데이터를 가져와 랜더링을 하는 작업을 하였습니다. 해당 작업을 진행하며 동적으로 태그 생성 및 네이버 지도 api를 가져와 랜더링하며 좌표를 찾아 좌표에 따라 이동이 되는 것을 확인하였습니다."
+    },
+    {
+      "id": 2,
+      "name": "StellaTalk",
+      "image": "https://stellatalk.s3.ap-northeast-2.amazonaws.com/image/stellatalk.png",
+      "githubURL": "https://github.com/chaeyi0731/univers",
+      "projectURL": "http://stellatalk.cherrylee.net/",
+      "blogURL": "https://leecherry.tistory.com/4",
+      "frontend": {
+        "technologies": ["React", "CSS", "typescript"]
+      },
+      "backend": {
+        "technologies": ["Node.js", "Express", "Node.js", "AWS S3"]
+      },
+      "database": {
+        "technologies": ["AWS RDS", "Mysql"]
+      },
+      "deployment": {
+        "technologies": ["AWS Lightsail"]
+      },
+      "description": "해당 stellaTalk은 Nasa의 API를 이용하여 해당 Nasa의 Apod API를 랜더링 한다.input에서 입력한 날짜데이터를 불러오려는 API의 url에 대입하고 해당 날짜의 사진과 타이틀 내용을 가져와 랜더링 한다. Mysql을 사용하여 사용자의 데이터를 데이터베이스에 담고 로그인 input의 값을 대조하거나 post의 게시글 데이터 삽입 추출을 확인하는 과정이 있어 데이터베이스의 쿼리를 확인 할 수 있는 작업이 되어 즐거웠습니다."
+    },
+    {
+      "id": 3,
+      "name": "Teamproject ERP",
+      "image": "",
+      "githubURL": "",
+      "projectURL": "",
+      "blogURL": "https://www.notion.so/kongukjae/97ea48fb68354a029dc71b33dbf7c592?pvs=4",
+      "frontend": {
+        "technologies": ["React", "javascript", "CSS", "typescript"]
+      },
+      "backend": {
+        "technologies": ["Node.js", "Express"]
+      },
+      "database": {
+        "technologies": ["MariaDB", "AWS RDS"]
+      },
+      "deployment": {
+        "technologies": [""]
+      },
+      "description": "팀프로젝트로 진행된 ERP는 사용자와 관리자가 코드를 볼 줄 모른다는 전제하에 작업한 쇼핑몰 프로젝트이며 데이터베이스 테이블간의 서로 참조하며 하는 작업이 매우 흥미가 있었습니다. 제가 맡은 부분은 바로구매 버튼과 장바구니, 결제페이지를 작업 했습니다. 따로 사이버 머니가 없기에 선택한 상품의 id를 확인 하여 가격과 총 수량을 확인하여 총 결제 금액이 얼마인지 확인하고 결제가 완료 된다면 메인페이지로 리디렉션 되는 작업이었다."
+    }
+  ]
+}
