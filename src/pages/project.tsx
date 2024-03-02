@@ -50,10 +50,14 @@ function ProjectsPage({ projects }: ProjectsPageProps) {
       <Slider {...settings}>
         {projects.map((project) => (
           <div key={project.id} className="p-6 rounded-lg shadow-lg mt-80">
-            <div className="flex flex-row items-center space-x-4">
-              {project.image && <img src={project.image} alt={project.name} className="rounded-md mb-4 w-1/2" />}
-              <div className="w-1/2">
-                <h3 className="text-xl font-semibold mb-2">{project.name}</h3>
+            <div className="flex flex-row items-center">
+              <div className="flex flex-col  items-center">
+                <div>
+                  <h3 className="text-5xl font-semibold mb-20">{project.name}</h3>
+                </div>
+                <div>{project.image && <img src={project.image} alt={project.name} />}</div>
+              </div>
+              <div className="ml-20">
                 <p className="text-gray-700 mb-4">{project.description}</p>
                 {project.githubURL && (
                   <a
