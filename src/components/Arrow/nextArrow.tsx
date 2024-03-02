@@ -3,7 +3,7 @@ import { FaArrowRight } from 'react-icons/fa'; // react-icons 라이브러리 �
 
 const NextArrow = ({ onClick }) => (
   <div className="custom-next-arrow text-right cursor-pointer" onClick={onClick}>
-    <FaArrowRight size={30} className="text-black" />
+    <FaArrowRight size={20} className="text-white" />
   </div>
 );
 
