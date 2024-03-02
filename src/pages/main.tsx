@@ -8,11 +8,8 @@ import Introduction from '../components/myInfo/Introduction';
 import ProjectsPage from './project';
 
 const TechStackList = dynamic(() => import('../components/TechStack/TechStackList.client'), {
-  ssr: false, // 서버 사이드 렌더링을 비활성화하여 
+  ssr: false, // 서버 사이드 렌더링을 비활성화하여
 });
-
-
-
 
 function Main() {
   const [projects, setProjects] = useState([]);
@@ -21,18 +18,19 @@ function Main() {
   const techStackRef = useRef(null);
   const introRef = useRef(null);
   const titleRef = useRef(null);
+  const projectRef = useRef(null);
 
   useEffect(() => {
     import('../../public/data/project.json')
       .then((data) => {
         setProjects(data.default.projects); // 데이터 구조에 따라 접근 경로 조정 필요
       })
-      .catch((error) => console.error("Failed to load projects data", error));
+      .catch((error) => console.error('Failed to load projects data', error));
   }, []);
-  
+
   return (
     <>
-      <Header profileRef={profileRef} techStackRef={techStackRef} introRef={introRef} titleRef={titleRef} />
+      <Header profileRef={profileRef} techStackRef={techStackRef} introRef={introRef} titleRef={titleRef} projectRef={projectRef} />
       <div>
         <div className="container flex flex-col justify-center overflow-y-hidden " ref={titleRef}>
           <div className=" mt-80 h-96 w-screen text-center -ml-28 ">
@@ -48,7 +46,9 @@ function Main() {
           <div ref={techStackRef}>
             <TechStackList />
           </div>
-          <ProjectsPage projects={projects} />
+          <div ref={projectRef}>
+            <ProjectsPage projects={projects} />
+          </div>
         </div>
       </div>
     </>
