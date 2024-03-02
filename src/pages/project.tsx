@@ -49,11 +49,11 @@ function ProjectsPage({ projects }: ProjectsPageProps) {
     <div>
       <Slider {...settings}>
         {projects.map((project) => (
-          <div key={project.id} className="p-6 rounded-lg shadow-lg mt-80">
+          <div key={project.id} className="p-6 rounded-lg shadow-lg mt-40 bg-white">
             <div className="flex flex-row items-center">
               <div className="flex flex-col  items-center">
                 <div>
-                  <h3 className="text-5xl font-semibold mb-20">{project.name}</h3>
+                  <h3 className="text-5xl font-semibold mb-20 text-black">{project.name}</h3>
                 </div>
                 <div>{project.image && <img src={project.image} alt={project.name} />}</div>
               </div>
@@ -101,7 +101,7 @@ function renderTechnologySections(project: Project) {
     (section, index) =>
       section.technologies.length > 0 && (
         <div key={index} className="mt-4">
-          <h4 className="font-bold">{section.title}:</h4>
+          <h4 className="text-gray-700  font-bold">{section.title}:</h4>
           <ul>
             {section.technologies.map((tech, techIndex) => (
               <li key={techIndex} className="text-gray-600">
