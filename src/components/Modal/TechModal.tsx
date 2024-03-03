@@ -13,7 +13,7 @@ const TechModal: React.FC<TechModalProps> = ({ tech, onClose }) => {
     <div className="modal-backdrop">
       <div className="modal-content">
         <h2>{tech.title}</h2>
-        <Image src={tech.imageUrl} alt={tech.title} />
+        <Image src={tech.imageUrl} alt={tech.title} width={100} height={100} />
         <ul>
           {tech.description.map((desc, index) => (
             <li key={index}>{desc}</li>
