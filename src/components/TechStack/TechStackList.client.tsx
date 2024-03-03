@@ -2,10 +2,27 @@
 import React, { useState, useEffect } from 'react';
 import TechModal from '../Modal/TechModal';
 import TechStackSection from './TechStackSection';
+import { Tech } from '../interface/Tech';
 
 function TechStackList() {
-  const [techStacks, setTechStacks] = useState({ frontend: [], backend: [], database: [], cloudServices: [], versionControl: [] });
-  const [selectedTech, setSelectedTech] = useState(null);
+  const [techStacks, setTechStacks] = useState<TechStacks>({
+    frontend: [],
+    backend: [],
+    database: [],
+    cloudServices: [],
+    versionControl: [],
+  });
+
+  const [selectedTech, setSelectedTech] = useState<Tech | null>(null);
+
+  interface TechStacks {
+    [key: string]: Tech[];
+    frontend: Tech[];
+    backend: Tech[];
+    database: Tech[];
+    cloudServices: Tech[];
+    versionControl: Tech[];
+  }
 
   useEffect(() => {
     async function fetchTechStacks() {
@@ -17,6 +34,7 @@ function TechStackList() {
           fetch('/data/tech/cloudServices.json'),
           fetch('/data/tech/versionControl.json'),
         ]);
+
         const data = await Promise.all(responses.map((res) => res.json()));
         setTechStacks({
           frontend: data[0],
@@ -33,7 +51,7 @@ function TechStackList() {
     fetchTechStacks();
   }, []);
 
-  function handleTechClick(tech) {
+  function handleTechClick(tech: Tech) {
     setSelectedTech(tech);
   }
 
