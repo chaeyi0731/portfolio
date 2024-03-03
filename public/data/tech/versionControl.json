@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Git",
+    "imageUrl": "https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1566913419/noticon/xf9bevlrgugi7xj6xkhp.png",
+    "description": [
+      "모든 프로젝트를 git을 통해 진행 하여 작업을 진행 하였고 또한 github를 사용하여 vscode에서 gitGraph를 통해 커밋 사항을 확인 하였습니다. git에서 버전태그를 사용하여 버전을 관리 했습니다. 또한 커밋 컨벤션을 맞춰 수정한 부분이나 수정할 부분을 찾기에 편리하고 작업 현황을 볼 수 있도록 작업을 진행했습니다."
+    ]
+  },
+  {
+    "title": "GitHub",
+    "imageUrl": "https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1662618438/noticon/q2u3hn0fk2l18fx3ywfb.png",
+    "description": ["GitHub를 사용하여 GUI적으로 issue를 통해 해야할 일과 마일스톤을 활용하여 버전 관리를 진행 하였으며 프로젝트 디렉토리가 없어도 클론만하면 작업을 이어 갈 수 있도록 진행 했습니다."]
+  }
+]
