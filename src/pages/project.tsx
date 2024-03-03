@@ -7,20 +7,8 @@ import 'slick-carousel/slick/slick-theme.css';
 import NextArrow from '@/components/Arrow/nextArrow';
 import PrevArrow from '@/components/Arrow/PrevArrow';
 import Image from 'next/image';
+import { Project } from '../components/interface/Project';
 
-interface Project {
-  id: number;
-  name: string;
-  githubURL?: string;
-  projectURL?: string;
-  blogURL?: string;
-  image?: string;
-  frontend: { technologies: string[] };
-  backend?: { technologies: string[] };
-  database?: { technologies: string[] };
-  deployment?: { technologies: string[] };
-  description: string;
-}
 
 interface ProjectsPageProps {
   projects: Project[];
@@ -38,7 +26,7 @@ export async function getStaticProps() {
   };
 }
 
-function ProjectsPage({ projects }: ProjectsPageProps) {
+const ProjectsPage: React.FC<ProjectsPageProps> = ({ projects }) => {
   // react-slick 슬라이더 설정
   const settings = {
     dots: true,
@@ -46,8 +34,8 @@ function ProjectsPage({ projects }: ProjectsPageProps) {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
+    nextArrow: <NextArrow onClick={() => {}} />,
+    prevArrow: <PrevArrow onClick={() => {}} />,
   };
 
   return (
@@ -92,7 +80,7 @@ function ProjectsPage({ projects }: ProjectsPageProps) {
       </Slider>
     </div>
   );
-}
+};
 
 function renderTechnologySections(project: Project) {
   const sections = [
