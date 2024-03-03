@@ -6,26 +6,30 @@ import dynamic from 'next/dynamic';
 import ProfileSection from '../components/ProfileSection';
 import Introduction from '../components/myInfo/Introduction';
 import ProjectsPage from './project';
+import { Project } from '../components/interface/Project';
 
-const TechStackList = dynamic(() => import('../components/TechStack/TechStackList.client'), {
-  ssr: false, // 서버 사이드 렌더링을 비활성화하여
-});
+
+
+const TechStackList = dynamic(
+  () => import('../components/TechStack/TechStackList.client').then((mod) => mod.default),
+  { ssr: false }
+);;
 
 function Main() {
-  const [projects, setProjects] = useState([]);
+  const [projects, setProjects] = useState<Project[]>([]); // Project 배열의 상태 관리
 
-  const profileRef = useRef(null);
-  const techStackRef = useRef(null);
-  const introRef = useRef(null);
-  const titleRef = useRef(null);
-  const projectRef = useRef(null);
+  const profileRef = useRef<HTMLDivElement>(null);
+  const techStackRef = useRef<HTMLDivElement>(null);
+  const introRef = useRef<HTMLDivElement>(null);
+  const titleRef = useRef<HTMLDivElement>(null);
+  const projectRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     import('../../public/data/project.json')
-      .then((data) => {
-        setProjects(data.default.projects); // 데이터 구조에 따라 접근 경로 조정 필요
+      .then((data: { projects: Project[] }) => {
+        setProjects(data.projects); // 데이터 구조에 따라 접근 경로 조정 필요
       })
-      .catch((error) => console.error('Failed to load projects data', error));
+      .catch((error) => console.error('데이터를 읽어오는 것을 실패했습니다.', error));
   }, []);
 
   return (
