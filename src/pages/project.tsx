@@ -9,7 +9,6 @@ import PrevArrow from '@/components/Arrow/PrevArrow';
 import Image from 'next/image';
 import { Project } from '../components/interface/Project';
 
-
 interface ProjectsPageProps {
   projects: Project[];
 }
@@ -48,7 +47,7 @@ const ProjectsPage: React.FC<ProjectsPageProps> = ({ projects }) => {
                 <div>
                   <h3 className="text-5xl font-semibold mb-20 text-black">{project.name}</h3>
                 </div>
-                <div>{project.image && <Image src={project.image} alt={project.name} />}</div>
+                <div>{project.image && <Image src={project.image} alt={project.name} width={500} height={300} layout="responsive" objectFit="cover" className="rounded-lg" />}</div>
               </div>
               <div className="ml-20">
                 <p className="text-gray-700 mb-4">{project.description}</p>
