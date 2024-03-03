@@ -1,0 +1,45 @@
+[
+  {
+    "title": "HTML",
+    "imageUrl": "hhttps://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1566995514/noticon/jufppyr8htislboas4ve.png",
+    "description": ["HTML을 사용하여 문서의 태그를 활용하여 문서를 작업할 수 있었고 안보이는 컨테이너와 보이는 컨테이너로 스타일을 조정을 하였습니다."]
+  },
+  {
+    "title": "Javascript",
+    "imageUrl": "https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1706849663/noticon/lixve7usqyb2j9ialhfa.png",
+    "description": [
+      "자바스크립트를 사용하여 브라우저의 DOM속성을 확인하여 스타일을 지정 할 때나 이벤트 핸들러 또는 값을 추출할때에 문서의 위치를 확인 할 수 있었으며 ID가 지어지지 않은 태그의 속성을 컨트롤을 할 수 있었습니다."
+    ]
+  },
+  {
+    "title": "CSS",
+    "imageUrl": "https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1566912109/noticon/puksfce6wca36hes1vom.png",
+    "description": ["대부분의 작업을 CSS를 통해 클래스를 지정하거나 직접 태그에 스타일을 작성하는 방법도 사용해보았습니다."]
+  },
+  {
+    "title": "Typescript",
+    "imageUrl": "https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1566913457/noticon/eh4d0dnic4n1neth3fui.png",
+    "description": [
+      "react를 사용할 때 typescript 를 사용하여 오류를 최적화 할 수있게 만들었습니다.",
+      "javascript에서 잡지 못했던 오류들을 typescript로 조금 더 강력하게 디버깅 하여 오류를 찾아내며 작업을 할 수 있습니다.",
+      "type 규정으로 인해 null 이나 undefined의 에러를 줄여 프로젝트의 작업 시간을 줄여 나갔습니다."
+    ]
+  },
+  {
+    "title": "TailWind CSS",
+    "imageUrl": "https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1657314490/noticon/ur8spzfcq4acw7ijp68v.png",
+    "description": ["테일윈드를 사용하여 일일히 클래스명을 지어주지 않아도 지정되어있는 클래스 네임으로 스타일링을 진행했습니다."]
+  },
+  {
+    "title": "React",
+    "imageUrl": "https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1566557331/noticon/d5hqar2idkoefh6fjtpu.png",
+    "description": [
+      "React를 사용하여 이전의 javascript의 페이지라우팅을 사용자 입장에서 매끄럽게 이어지는 것처럼 보일 수 있게 방법을 사용하였고 컴포넌트 관리로 재사용가능성이나 커스텀 훅으로 상태관리 등을 확인 할 수 있습니다."
+    ]
+  },
+  {
+    "title": "Next.js",
+    "imageUrl": "https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1566879300/noticon/fvty9lnsbjol5lq9u3by.svg",
+    "description": ["Next.js를 사용하여 React에서 일일히 라우팅 해주어야 했던 번거로움을 줄여주고 next 14버전의 app 폴더 라우팅을 사용하여 페이지 관리를 진행했습니다."]
+  }
+]
