@@ -1,45 +1,47 @@
 // TechStackList.client.tsx
-'use client';
 import React, { useState, useEffect } from 'react';
-import TechStackSection from './TechStackSection';
+import TechModal from '../Modal/TechModal';
 import { Tech } from '../interface/Tech';
 
 function TechStackList() {
-  const [techStack, setTechStack] = useState<Tech[]>([]);
-
-  const [selectedTechDescription, setSelectedTechDescription] = useState('');
+  const [techStacks, setTechStacks] = useState<Tech[]>([]);
+  const [selectedTech, setSelectedTech] = useState<Tech | null>(null);
 
   useEffect(() => {
-    fetch('/data/mydata.json')
-      .then((response) => response.json())
-      .then((data: Tech[]) => setTechStack(data))
-      .catch((error) => console.error('json 불러오기 실패:', error));
+    // 각 JSON 파일에서 기술 스택 데이터를 불러와 합치기
+    Promise.all([
+      fetch('data/tech/frontend.json').then((res) => res.json()),
+      fetch('/data/tech/backend.json').then((res) => res.json()),
+      fetch('/data/tech/database.json').then((res) => res.json()),
+      fetch('/data/tech/cloudServices.json').then((res) => res.json()),
+      fetch('/data/tech/versionControl.json').then((res) => res.json()),
+    ])
+      .then((dataArrays) => {
+        // 여러 JSON 파일에서 불러온 배열을 하나로 합치기
+        const combinedData = dataArrays.flat();
+        setTechStacks(combinedData);
+      })
+      .catch((error) => console.error('Failed to load tech stack data:', error));
   }, []);
 
-  const handleTechClick = (description: string[]) => {
-    const descriptionText = Array.isArray(description) ? description.join(' ') : '';
-    setSelectedTechDescription(descriptionText);
+  const handleTechClick = (tech: Tech) => {
+    setSelectedTech(tech);
+  };
+
+  const handleCloseModal = () => {
+    setSelectedTech(null);
   };
 
   return (
-    <div className="ml-56 mt-32 flex flex-col">
-      <h1 className="text-2xl font-bold mt-7">⚒️ 기술 스택</h1>
-      <div className="flex mt-10">
-        <div className="flex flex-wrap justify-between w-96 mr-10 mt-9">
-          {' '}
-          {techStack.map((tech, index) => (
-            <TechStackSection key={index} tech={tech} onTechClick={() => handleTechClick(tech.description)} />
-          ))}
+    <div className="tech-stack-list">
+      {techStacks.map((tech, index) => (
+        <div key={index} className="tech-stack-section" onClick={() => handleTechClick(tech)}>
+          <h2>{tech.title}</h2>
+          <img src={tech.imageUrl} alt={tech.title} />
         </div>
-        {selectedTechDescription && (
-          <div className="flex-1 flex justify-center">
-            {' '}
-            <div className="text-gray-400  text-xl text-justify flex justify-center">
-              <p className="whitespace-pre-wrap  ">{selectedTechDescription}</p>
-            </div>
-          </div>
-        )}
-      </div>
+      ))}
+
+      {selectedTech && <TechModal tech={selectedTech} onClose={handleCloseModal} />}
     </div>
   );
 }
