@@ -43,7 +43,7 @@ function Main() {
           <div ref={introRef}>
             <Introduction />
           </div>
-          <div ref={techStackRef}>
+          <div ref={techStackRef} className="mt-96">
             <TechStackList />
           </div>
           <div ref={projectRef}>
