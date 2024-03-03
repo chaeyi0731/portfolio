@@ -1,0 +1,24 @@
+[
+  {
+    "title": "Node.js",
+    "imageUrl": "https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1634264836/noticon/uxvdxcyvs5ocrxhacfj6.png",
+    "description": [
+      "거의 모든 작업에서 node를 사용하여 로컬로 서버 개발을 해보았습니다. 서버의 요청인 request 와 응답인 response를 사용하여 서버의 요청이 무엇이고 그에 걸맞는 응답은 어떤것이 있는것인지 확인을 하여 작업을 진행 하였고 바닐라로 해당 서버의 요청응답 해결 후 프레임워크인 express를 사용하였습니다."
+    ]
+  },
+  {
+    "title": "express",
+    "imageUrl": "https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1597622806/noticon/avedhz3pvaij65k3ztar.png",
+    "description": [
+      "Http 메서드인 GET, POST, PUT , DELETE 등을 사용하여 서버와 클라이언트 사이의 요청과 응답을 해결 해보았으며 데이터베이스의 데이터 삽입 및 추출 하여 랜더링 하는 것을 경험함으로서 데이터베이스와 서버간의 유연한 통신이 가능합니다"
+    ]
+  },
+  {
+    "title": "Python",
+    "imageUrl": "https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1566791609/noticon/nen1y11gazeqhejw7nm1.png",
+    "description": [
+      "많은 양의 데이터를 크롤링하고 분석하여보고 데이터 중 원하는 값을 추출하는 경험으로 파이썬을 사용하여 데이터 처리 분석이 가능합니다.",
+      "또한 python의 프레임워크인 flask를 사용하여 node.js에서 사용하였던 서버와의 응답 요청을 사용 할 수 있습니다."
+    ]
+  }
+]
