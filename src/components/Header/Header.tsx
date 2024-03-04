@@ -21,7 +21,7 @@ function Header({ profileRef, techStackRef, introRef, titleRef, projectRef }: He
       <div className="flex justify-around w-5/12">
         <button onClick={() => scrollToSection(profileRef)}>Profile</button>
         <button onClick={() => scrollToSection(introRef)}>intro</button>
-        <button onClick={() => scrollToSection(techStackRef)}>Skill</button>
+        <button onClick={() => scrollToSection(techStackRef)}>Tech stack</button>
         <button onClick={() => scrollToSection(projectRef)}>Project</button>
       </div>
     </header>
