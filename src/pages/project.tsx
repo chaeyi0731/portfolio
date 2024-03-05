@@ -50,6 +50,7 @@ const ProjectsPage: React.FC<ProjectsPageProps> = ({ projects }) => {
                 <div>{project.image && <Image src={project.image} alt={project.name} width={500} height={300} layout="responsive" objectFit="cover" className="rounded-lg" />}</div>
               </div>
               <div className="ml-20">
+                <h3 className="text-3xl font-semibold mb-10 text-black">{project.name}</h3>
                 <p className="text-gray-700 mb-4">{project.description}</p>
                 {project.githubURL && (
                   <a
