@@ -56,7 +56,7 @@ function TechStackList() {
   }
 
   return (
-    <div className="mt-56 flex flex-row ">
+    <div className="mt-96 flex flex-row ">
       {['frontend', 'backend', 'database', 'cloudServices', 'versionControl'].map((category) => (
         <div key={category} className="flex flex-col items-center mb-4 bg-white text-gray-700 w-60 mr-5 rounded-xl ">
           <div>
