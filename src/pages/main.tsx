@@ -30,16 +30,16 @@ function Main() {
   return (
     <>
       <Header profileRef={profileRef} techStackRef={techStackRef} introRef={introRef} titleRef={titleRef} projectRef={projectRef} />
-      <div className="flex flex-col justify-around">
+      <div>
         <div className="container overflow-y-hidden" ref={titleRef}>
           <div className="w-full mt-80 h-96  text-center">
             <h1 className="text-5xl mt-96 font-bold animate-bounce">안녕하세요! 이채이입니다 👋</h1>
           </div>
-          <div ref={profileRef} className="container">
+          <div ref={profileRef}>
             <ProfileSection />
           </div>
-          <hr className="border-white w-2/3 my-10 ml-56 mt-96" />
-          <div ref={introRef} className="container">
+          <hr className="border-white w-2/3 my-10 ml-56 mt-32" />
+          <div ref={introRef}>
             <Introduction />
           </div>
           <div ref={techStackRef}>
