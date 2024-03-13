@@ -31,14 +31,14 @@ function Main() {
     <>
       <Header profileRef={profileRef} techStackRef={techStackRef} introRef={introRef} titleRef={titleRef} projectRef={projectRef} />
       <div>
-        <div className="container overflow-y-hidden" ref={titleRef}>
-          <div className="w-full h-screen text-center">
-            <h1 className="text-5xl h-screen font-bold animate-bounce">안녕하세요! 이채이입니다 👋</h1>
+        <div className="container overflow-y-hidden w-screen" ref={titleRef}>
+          <div className="w-screen h-screen text-center justify-center items-center">
+            <h1 className="text-5xl font-bold animate-bounce">안녕하세요! 이채이입니다 👋</h1>
           </div>
           <div ref={profileRef}>
             <ProfileSection />
           </div>
-          <hr className="border-white h-screen" />
+          <hr className="border-white" />
           <div ref={introRef} className="container">
             <Introduction />
           </div>
