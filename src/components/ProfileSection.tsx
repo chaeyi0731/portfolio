@@ -6,7 +6,7 @@ function ProfileSection() {
     <div className="container flex flex-row  justify-center h-screen">
       <Profileimage />
       <ContactInfo />
-    </div>
+    </div> 
   );
 }
 
