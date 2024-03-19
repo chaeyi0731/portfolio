@@ -31,18 +31,18 @@ function Main() {
     <>
       <Header profileRef={profileRef} techStackRef={techStackRef} introRef={introRef} titleRef={titleRef} projectRef={projectRef} />
       <div>
-        <div className="container overflow-y-hidden w-screen" ref={titleRef}>
-          <div className="w-screen h-screen text-center justify-center items-center">
+        <div ref={titleRef}>
+          <div className="w-screen h-screen flex text-center justify-center items-center">
             <h1 className="text-5xl font-bold animate-bounce">안녕하세요! 이채이입니다 👋</h1>
           </div>
-          <div ref={profileRef}>
+          <div className="w-screen h-screen flex  flex-col justify-center items-center" ref={profileRef}>
             <ProfileSection />
+            <hr className="border-white mt-32 ml-48 w-3/4" />
           </div>
-          <hr className="border-white" />
-          <div ref={introRef} className="container">
+          <div ref={introRef} className="w-screen h-screen flex justify-center items-center -ml-52">
             <Introduction />
           </div>
-          <div ref={techStackRef}>
+          <div className="w-screen h-screen flex  justify-center items-center" ref={techStackRef}>
             <TechStackList />
           </div>
           <div ref={projectRef}>
