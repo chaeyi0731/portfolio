@@ -1,8 +1,8 @@
 function Introduction() {
   return (
-    <div className="w-screen h-screen flex flex-col justify-center">
-      <h1 className="text-2xl font-bold mt-7 ">👨‍💻 Web Developer</h1>
-      <ul className="mt-4 font-medium list-disc">
+    <div>
+      <h1 className="text-2xl font-bold ">👨‍💻 Web Developer</h1>
+      <ul className="mt-4 font-medium list-none">
         <li className="mt-4 ml-5">
           안녕하세요! <span className="font-bold text-blue-400">꾸준히 성장하는 개발자 이채이</span> 입니다.
         </li>
