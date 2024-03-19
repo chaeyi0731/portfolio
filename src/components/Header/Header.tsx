@@ -14,7 +14,7 @@ function Header({ profileRef, techStackRef, introRef, titleRef, projectRef }: He
   };
 
   return (
-    <header className="fixed top-0 w-full h-28 flex justify-between items-center text-xl bg-gray-400 bg-opacity-25">
+    <header className="fixed top-0 w-full h-16 flex justify-between items-center text-xl bg-gray-400 bg-opacity-25">
       <div className="ml-20">
         <button onClick={() => scrollToSection(titleRef)}>ChaeYi</button>
       </div>
