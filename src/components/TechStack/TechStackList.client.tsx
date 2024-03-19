@@ -56,9 +56,9 @@ function TechStackList() {
   }
 
   return (
-    <div className="w-screen h-screen flex flex-row ">
+    <div className="flex flex-row">
       {['frontend', 'backend', 'database', 'cloudServices', 'versionControl'].map((category) => (
-        <div key={category} className="flex flex-col items-center mb-4 bg-white text-gray-700 w-60 mr-5 rounded-xl ">
+        <div key={category} className="flex flex-col items-center mb-4 bg-white text-gray-700 ">
           <div>
             <h2 className="text-2xl font-bold mb-20 mt-9 text-center">{category.charAt(0).toUpperCase() + category.slice(1)}</h2>
           </div>
